@@ -1,0 +1,60 @@
+{#
+Nunjucks Templating!
+Homepage: https://mozilla.github.io/nunjucks/
+Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+<div id="app">
+  <div class="general-content">
+    <h5 class="card-title text-center">Mouse Check</h5>
+
+    <div class="boxes">
+      <div class="boxHover box">
+        <p class="box-content">
+          Hover
+        </p>
+      </div>
+      <div class="boxClick box">
+        <p class="box-content">
+          Click
+        </p>
+      </div>
+      <div class="boxDoubleClick box">
+        <p class="box-content">
+          Double Click
+        </p>
+      </div>
+      <div class="boxRightClick box">
+        <p class="box-content">
+          Right Click
+        </p>
+      </div>
+      <div class="boxScrollCont">
+        <div class="boxScroll box">
+          <div class="scroll-content">
+            <p class="box-content">
+              Scroll
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="scrollClick box">
+        <p class="box-content">
+          Scroll Click
+        </p>
+      </div>
+    </div>
+    <div class="massage-content">
+      <div class="alert">
+        Harika !! Mouse'un çalışıyor.
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,72 @@
+@import "base/typography";
+
+body {
+  background-color: #ecf0f1;
+  #app {
+    .general-content {
+      .boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+        position: relative;
+        background-color: #fff;
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
+        border-radius: 5px;
+        .box-content {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          margin: 0;
+          .fa-check {
+            color: green;
+            font-size: 30px;
+          }
+        }
+      }
+      .massage-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: green;
+        color: #fff;
+        .alert {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 50px;
+        }
+      }
+    }
+        .boxScrollCont {
+          .boxScroll {
+            height: 200px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            .scroll-content {
+              height: 210px;
+            }
+          }
+        }
+        .card-title {
+          text-align: center;
+          font-weight: bold;
+        }
+
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
